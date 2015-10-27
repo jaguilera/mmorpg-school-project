@@ -1,0 +1,14 @@
+{
+  "name": "tmmorpg-app",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaguilera/mmorpg-school-project.git"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "morgan": "^1.6.1",
+    "phaser": "^2.4.4",
+    "socket.io": "^1.3.7"
+  }
+}

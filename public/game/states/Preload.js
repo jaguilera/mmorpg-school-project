@@ -19,4 +19,3 @@ Preload.prototype = {
 		this.game.state.start('login-state')
 	}
 };
-return Preload;
