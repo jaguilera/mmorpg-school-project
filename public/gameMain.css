@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/10/2015, 02:11:48 AM
+    Author     : Joaquin
+*/
+body{
+    margin: 0 auto;
+    background-color:#000;
+}
+#game{
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 auto;
+    border: 1px solid red;
+}
+#container{
+    width:800px;
+    height: 600px;
+    border: 1px black solid;
+}
+#map{
+    background-color: green;
+    width: 600px;
+    height: 400px;
+    
+}
+#botDock{
+    background-color: gray;
+    height: 200px;
+    width: auto;
+}
+
+#rightDock{
+    float: right;
+    background-color: blue; 
+    width: 200px;
+    height: 600px;
+}

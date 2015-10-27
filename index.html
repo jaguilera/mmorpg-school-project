@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TRPG - Main</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--[if IE]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+  <link href="gameMain.css" rel="stylesheet">
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+  </script>
+  <script data-main='scripts/main' src='scripts/require.js'></script>
+</head>
+
+<body>
+    <div id="game"> <canvas id="canvas_id" width="960" height="640"></canvas></div>
+   
+    <!--div id="container">
+        <div id="rightDock">
+        </div>
+        <div id="map">
+        </div>
+        
+        <div id="botDock">
+        </div>
+    </div-->
+</body>
+</html>
