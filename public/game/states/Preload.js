@@ -1,21 +1,27 @@
 'use strict'
-
 /*************
 
 Preload.js
 
-	Carga archivos esenciales para el juego, luego cambia al estado principal main-intro
-	Loads all essential game assets, then switches to the main-intro state.
+	Carga archivos esenciales para el juego, luego cambia al estado principal login-state
+	Loads all essential game assets, then call to the login-state state.
 
 *************/
 
-function Preload() {}:
+define([], function(){
+	function Preload() {};
 
-Preload.prototype = {
-	preload: function(){
+	Preload.prototype = {
+		init: function(){
+			console.log('%cPreload state init',css);
+		},
+		preload: function(){
 
-	},
-	create: function(){
-		this.game.state.start('login-state')
-	}
-};
+		},
+		create: function(){
+			console.log('%cCalling LoginState',css);
+			this.game.state.start('login-state');
+		}
+	};
+	return Preload;
+})

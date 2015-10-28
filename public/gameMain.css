@@ -11,6 +11,12 @@ body{
     margin: 0 auto;
     background-color:#000;
 }
+#loginForm, .ui-button-text{
+    font-size: 12px;
+}
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
 #game{
     width: 960px;
     height: 640px;

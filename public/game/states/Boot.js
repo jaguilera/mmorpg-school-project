@@ -1,17 +1,21 @@
-'use strict'
+'use strict';
 /*************
 
 Boot.js
 
-	Realiza la carga inicial del juego
-	Make initial load of the game
+	Realiza la carga inicial del juego, llama a la funcion precargar
+	Make initial load of the game, calls preload function
 
 *************/
-define([],function(){
-	function Boot() {};
+/*global define:true*/
+/*global css:true*/
+/*global cssError:true*/
+/*global console:true*/
+define([], function(){
+	function Boot() {}
 
 	Boot.prototype = {
-		init: function(){
+		init: function(){			
 			console.log('%cBoot state init',css);
 		},
 		preload: function(){
@@ -21,12 +25,11 @@ define([],function(){
 			console.log('%cStarted load of assets',css);
 		},
 		create: function(){
-			//setup game environment
-			//scale, input, etc...
-			//this.game.state.start('preload')
+			console.log('%cCalling Preload',css);
+			this.game.state.start('preload');
 		},
 		shutdown: function(){
-			console.log('Boot state shutdown')
+			console.log('%cBoot state shutdown',cssError);
 		}
 
 	};
