@@ -3,7 +3,6 @@
 
 Preload.js
 
-	Carga archivos esenciales para el juego, luego cambia al estado principal login-state
 	Loads all essential game assets, then call to the login-state state.
 
 *************/

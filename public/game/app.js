@@ -3,12 +3,11 @@
 
 App.js
 
-    Función principal, usa requirejs para definir los scripts del juego e inicializa Phaser, llama al estado Boot
     Load all game scripts and starts Phaser, calls Boot stae
 
 *************/
 
-define(['phaser','states/boot','states/preload', 'states/loginstate'], function(Phaser, Boot, Preload, LoginState){
+define(['phaser','states/Boot','states/Preload', 'states/LoginState', 'states/LevelMaster'], function(Phaser, Boot, Preload, LoginState, LevelMaster){
 
     function Game(){}
 
@@ -19,7 +18,7 @@ define(['phaser','states/boot','states/preload', 'states/loginstate'], function(
             game.state.add('boot',Boot);
             game.state.add('preload',Preload);
             //game.state.add('dynamic-state',DynamicState),
-            //game.state.add('level-master',LevelMaster);
+            game.state.add('level-master',LevelMaster);
             game.state.add('login-state',LoginState);
             game.state.start('boot');
         },

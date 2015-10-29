@@ -3,10 +3,10 @@ function LevelMaster() {};
 
 LevelMaster.prototype = {
 	init: function() {
-
+		console.log('%cLevelMaster init',css)
 	},
 	create: function() {
-		this.getMapAndPack();
+		//this.getMapAndPack();
 	},
 	decideLevelState: function(){
 

@@ -21,21 +21,22 @@ define([],function(){
 				title: "Login",
 				draggable: false,
 			    buttons: {
-			    	"Create an account": function(){
-			    	},
+			    	"Create an account": function(){},
 			    	"Submit": function(){
-			    		var iUser = JSON.stringify($("#input_user").val());
-			    		var iPass = JSON.stringify($("#input_pass").val());
+			    		var iUser = $("#input_user").val();
+			    		var iPass = $("#input_pass").val();
 			    		console.log('trying to log user: ' + iUser );
-			    		socket.emit('CLIENT_LOGIN', { user: iUser, pass: iPass }, function() {
-			    			console.log('logged!')
-			    		} );
-			    	}
+			    		socket.emit('CLIENT_LOGIN', { user: iUser, pass: iPass }, function(msg) {
+			    			playerUID = msg.UID;
+			    			$("#loginForm").dialog('close');
+			    			this.startGame();
+			    		}.bind(this) );
+			    	}.bind(this)
 			    }
 			})
 		},
 		startGame: function (){
-			// this.game.state.start('level-master');
+			console.log("%cStarting game!",css)
 		}
 	};
 	return LoginState;

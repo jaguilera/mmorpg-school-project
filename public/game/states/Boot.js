@@ -3,7 +3,6 @@
 
 Boot.js
 
-	Realiza la carga inicial del juego, llama a la funcion precargar
 	Make initial load of the game, calls preload function
 
 *************/
