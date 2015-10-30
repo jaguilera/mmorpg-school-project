@@ -17,7 +17,7 @@ Database.prototype = {
 
 	},
 	connect: function(){
-			this.connection = this.mysql.createConnection({
+		this.connection = this.mysql.createConnection({
 			host: this.host,
 			user: this.user,
 			password: this.password,

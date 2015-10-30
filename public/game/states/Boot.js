@@ -18,17 +18,16 @@ define([], function(){
 			console.log('%cBoot state init',css);
 		},
 		preload: function(){
-			//preloader assets
+			this.game.load.image('loading','assets/loading.png');
 		},
-		loadUpdate: function(){
-			console.log('%cStarted load of assets',css);
-		},
+		//loadUpdate: function(){
+		//},
 		create: function(){
-			console.log('%cCalling Preload',css);
+			this.game.add.image(0, 0, 'loading');
+			this.game.add.text(this.game.world.centerX, 540, "Boot", { font: "65px Monotype Corsiva", fill: "#ff0044", align: "center"});
 			this.game.state.start('preload');
 		},
 		shutdown: function(){
-			console.log('%cBoot state shutdown',cssError);
 		}
 
 	};

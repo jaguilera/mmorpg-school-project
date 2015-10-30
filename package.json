@@ -6,6 +6,7 @@
     "url": "git://github.com/jaguilera/mmorpg-school-project.git"
   },
   "dependencies": {
+    "colors": "^1.1.2",
     "express": "^4.13.3",
     "morgan": "^1.6.1",
     "mysql": "^2.9.0",
